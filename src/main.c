@@ -101,7 +101,7 @@ int Checking(char **cmd, int x, int flagCD) {
             } else {
                 chdir(cmd[i + 1]);
             }
-            break;
+            exit(1);
             // char *newCWD[100];
             // getcwd(newCWD, sizeof(newCWD));
             // setenv("PWD", newCWD, 1);
